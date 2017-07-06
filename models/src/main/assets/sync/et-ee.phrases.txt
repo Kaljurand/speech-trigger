@@ -1,0 +1,4 @@
+vasakule üks /1e-10/
+vasakule kaks /1e-20/
+vasakule kolm /1e-30/
+vasakule neli /1e-40/

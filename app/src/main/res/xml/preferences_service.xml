@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="@string/defaultPhraseEtEe"
+        android:inputType="text"
+        android:key="@string/keyPhraseEtEe"
+        android:summary="@string/summaryPhrase"
+        android:title="@string/titlePhraseEtEe"></EditTextPreference>
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="@string/defaultPhraseEnUs"
+        android:inputType="text"
+        android:key="@string/keyPhraseEnUs"
+        android:summary="@string/summaryPhrase"
+        android:title="@string/titlePhraseEnUs"></EditTextPreference>
+</PreferenceScreen>

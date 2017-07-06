@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyPhraseEtEe" translatable="false">keyPhraseEtEe</string>
+    <string name="keyPhraseEnUs" translatable="false">keyPhraseEnUs</string>
+    <string name="defaultPhraseEtEe" translatable="false">hallo robot</string>
+    <string name="defaultPhraseEnUs" translatable="false">hey computer</string>
+
+    <string name="labelApp">Speech Trigger</string>
+    <string name="descriptionApp">Speech recognizer service that listens until a given keyphrase is recognized</string>
+    <string name="labelActivityPreferencesRecognitionService">Settings</string>
+    <string name="summaryPhrase">Recognition session finishes when this phrase is heard</string>
+    <string name="titlePhraseEtEe">Keyphrase (et-EE)</string>
+    <string name="titlePhraseEnUs">Keyphrase (en-US)</string>
+    <string name="buttonLaunchK6neleEn">Launch Kõnele with trigger service (en)</string>
+    <string name="buttonLaunchK6neleEt">Launch Kõnele with trigger service (et)</string>
+    <string name="buttonSettingsApp">App settings</string>
+    <string name="buttonSettingsService">Service settings</string>
+    <string name="buttonLoadRewrites">Load rewrites</string>
+    <string name="infoMain">Follow the links below to
+        grant the recording and storage permission to this app (App settings);
+        configure the default key phrases (Service settings);
+        import the Trigger rewrite table into Kõnele (Load rewrites), which allows you to start Kõnele
+    and say \"launch speech trigger\" to launch itself with the speech trigger service provided by this app;
+    launch Kõnele directly with the speech trigger service (Launch Kõnele with trigger service).
+    Note that only the first step is required. The last two steps are just demonstrating two
+        ways of using the service, in both cases the default key phrase is overridden, and
+        once heard, the trigger launches Kõnele with rewrite tables \"Lights\" and \"Lights.Hue\".
+    </string>
+</resources>

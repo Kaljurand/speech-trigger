@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile project(':speechutils:app')
+    compile project(':aars')
+    compile project(':models')
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId 'ee.ioc.phon.android.speechtrigger'
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 120
+        versionName '0.1.20'
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning', 'IconLauncherFormat'
+    }
+}
+
+
+task(deploy) << {
+    description 'Copy the APK to the deploy directory'
+
+    def name = 'SpeechTrigger'
+    def buildtype = 'debug'
+    def deploy_dir = System.getenv('APK_DEPLOY_DIR')
+
+    def version = android.defaultConfig.versionName
+
+
+    def outputs = 'build/outputs/'
+    def apk1 = outputs + "apk/app-${buildtype}.apk"
+    // gradle plugin v3: def apk1 = outputs + "apk/${buildtype}/app-${buildtype}.apk"
+    def apk2 = "${deploy_dir}${name}-${version}.apk"
+    //def mapping1 = outputs + 'mapping/release/mapping.txt'
+    //def mapping2 = "${deploy_dir}${name}-mapping-${version}.txt"
+
+    def output1 = exec {
+        commandLine 'cp', '--verbose', apk1, apk2
+    }
+
+    //def output2 = exec {
+    //    commandLine 'cp', '--verbose', mapping1, mapping2
+    //}
+
+    def output3 = exec {
+        commandLine 'ls', '-l', deploy_dir
+    }
+
+    println "adb uninstall ee.ioc.phon.android.speechtrigger"
+    println "adb install ${apk2}"
+}
