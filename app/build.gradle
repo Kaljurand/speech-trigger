@@ -14,12 +14,12 @@ android {
         applicationId 'ee.ioc.phon.android.speechtrigger'
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 120
-        versionName '0.1.20'
+        versionCode 121
+        versionName '0.1.21'
     }
 
     lintOptions {
-        disable 'GoogleAppIndexingWarning', 'IconLauncherFormat'
+        disable 'GoogleAppIndexingWarning', 'IconLauncherFormat', 'IconMissingDensityFolder'
     }
 }
 

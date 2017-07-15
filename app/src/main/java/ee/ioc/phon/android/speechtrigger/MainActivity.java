@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
 
         // TODO: improve this, e.g. allow the user to edit the URL; pull the URL into a string
         // and import it into K6nele directly, as hands-free as possible.
-        findViewById(R.id.buttonLoadRewrites).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonViewRewrites).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);

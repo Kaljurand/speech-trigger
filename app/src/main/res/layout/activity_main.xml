@@ -37,11 +37,11 @@
                 android:text="@string/buttonSettingsService" />
 
             <Button
-                android:id="@+id/buttonLoadRewrites"
+                android:id="@+id/buttonViewRewrites"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/buttonLoadRewrites" />
+                android:text="@string/buttonViewRewrites" />
 
             <Button
                 android:id="@+id/buttonLaunchK6neleEn"

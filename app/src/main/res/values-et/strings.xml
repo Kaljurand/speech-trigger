@@ -10,15 +10,15 @@
     <string name="buttonLaunchK6neleEt">Käivita Kõnele lülititeenusega (et)</string>
     <string name="buttonSettingsApp">Rakenduse seaded</string>
     <string name="buttonSettingsService">Teenuse seaded</string>
-    <string name="buttonLoadRewrites">Laadi ümberkirjutusreeglid</string>
+    <string name="buttonViewRewrites">Vaata Trigger-reeglid</string>
     <string name="infoMain">Kasutage allolevaid linke, et
         anda kõnelüliti teenusele lindistamise ja andmete salvestamise õigus (Rakenduse seaded);
         muuta teenuse äratuslausung (Teenuse seaded);
-        laadida Kõnele rakendusse Trigger-ümberkirjutustabel (Laadi ümberkirjutusreeglid), mille abil
-        saab Kõnele rakenduses kasutada käsku \"käivita kõnelüliti\",
+        vaadata Trigger-ümberkirjutustabelit (Vaata Trigger-reegleid), ja
+        laadida need Kõnele rakendusse, mis võimaldab Kõnele rakenduses kasutada käsku \"käivita kõnelüliti\",
         selleks et Kõnele kõnelüliti teenusega taaskäivitada;
         käivitada Kõnele kohe kõnelülititeenusega (Käivita Kõnele lülititeenusega).
-        Ainult esimene samm on tingimata vajalik. Kaks viimast sammu on lihtsalt näitamaks, kuidas
-        lülititeenust kasutada. Mõlemal juhul laaditakse äratuslausung üle, ning selle kuulmise peale
+        Ainult esimene samm on tingimata vajalik. Ülejäänud näitavad kahte viisi
+        lülititeenuse kasutamiseks. Mõlemal juhul defineeritakse äratuslausung ringi, ning selle kuulmise peale
         käivitub Kõnele ümberkirjutustabelitega \"Lights\" ja \"Lights.Hue\".</string>
 </resources>
